@@ -1,14 +1,20 @@
-import ShopsMap from '../pages/ShopsMap/ShopsMap.vue'
-
-
-
+import All from '../pages/All/All.vue'
+import ProductInfo from '../pages/ProductInfo/ProductInfo.vue'
 export default [
   {
-    path:'/shopsmap',
-    component:ShopsMap
+    path:'/qbcp',
+    component:All
+  },
+  {
+    path:'/productinfo/:id',
+    component:ProductInfo
+  },
+  {
+    path:'/rhgm',
+    component:All
   },
   {
     path: '/',
-    redirect: '/shopsmap'
+    redirect: '/qbcp'
   }
 ]
