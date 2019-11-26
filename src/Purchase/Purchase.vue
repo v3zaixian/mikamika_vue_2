@@ -6,7 +6,7 @@
     </el-carousel-item>
   </el-carousel>
 <div class="sxh_center">
-    <img class="sxh_img" :src="{{../assets/mk05.png}}" @click="handleChangeImg($event)"/>>
+    <img class="sxh_img" src="../assets/mk05.png">
 </div>
 <div class="sxh_bottom">
     <img class="sxh_img" :src="{{../assets/mk04.png}}" @click="handleChangeImg($event)"/>>
