@@ -136,6 +136,7 @@ export default {
 </script>
 
 <style>
+@import '../reset.css';
 .sxh_cop{
   width: 100%;
 }
