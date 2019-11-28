@@ -58,7 +58,7 @@
       <el-col :span="3">
           <div class="grid-content bg-purple">
             <el-button plain round size="mini" :class="{active:$route.path === '/login'}" @click="goPath('/login')">
-              登录
+              {{isLogin?'退出登录':'登录'}}
             </el-button>
           </div>
       </el-col>
@@ -96,10 +96,20 @@
 
 <script>
 export default {
-  
+  data() {
+    return {
+      isLogin:false
+    }
+  },
+  mounted(){
+    if(this.$store.state.isLogin){
+      this.isLogin=true
+    }
+  },
   methods: {
     goPath(path){
       this.$route.path !== path && this.$router.replace(path)
+      
     },
 
     toTop(){

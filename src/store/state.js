@@ -1,3 +1,4 @@
 export default {
-    allProduct: {}
+    allProduct: {},
+    isLogin:0
 }

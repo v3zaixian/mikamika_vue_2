@@ -53,21 +53,22 @@
 
         let result
         if(success){
-          alert('前端验证成功')
+          // alert('前端验证成功')
           // 收集表单项数据，发送请求进行后端验证
           
           result = await this.$API.getLogin( username, pwd )
-          console.log(result)
+          // console.log(result)
           if(result.code === 1){
             this.pwd = ''
           }
         } else {
-          alert('前端验证失败')
+         // alert('前端验证失败')
         }
 
         //登录成功的处理
         if(result.code === 0){
-          alert('登录成功')
+          //alert('登录成功')
+          this.$store.state.isLogin = 1;
           this.$router.replace('/shouye')
         }
      }
